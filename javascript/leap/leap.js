@@ -18,6 +18,11 @@ Year.prototype.isLeap = function() {
     return true;
   }
   return false;
+
+  //a more elegant solution I found on stackoverflow.
+  /*
+  return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+  /*/
 }
 
 module.exports = Year;
